@@ -1,0 +1,44 @@
+.content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 649px){
+    .hero, .top-news, .weather, .recent-news, .scores {
+        width: 100%
+    }
+
+}
+
+@media screen and (min-width: 650px) {
+  .hero {
+    width: 66%;
+    order: -2;
+  }
+  .top-news {
+    width: 33%;
+    order: -1;
+  }
+  .weather {
+    width: 50%;
+    order: 3;
+  }
+
+  .recent-news {
+    width: 100%;
+    order: 0;
+
+  }
+  .scores {
+    width: 50%;
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 900px) {
+    body, html {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+}
